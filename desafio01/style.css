@@ -1,0 +1,104 @@
+:root {
+  --fonte: 'Lexend Deca', sans-serif;
+  --cor-header: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+  --white: #FFFFFF;
+  --date-grey: #717171;
+  --black-title: #1A202C;
+  --search-background: rgba(255, 255, 255, 0.2);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+body {
+  font-family: var(--fonte);
+  background-color: #F3F5F7;
+}
+
+.header_container {
+  background: var(--cor-header);
+  padding: 3em 1.5em 0em 1.5em;
+}
+
+.header_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.search{
+  background: var(--search-background);
+  border-radius: 5px;
+  border: 1px;
+  padding: 10px;
+  width: 100%;
+  margin: 3em 0;
+
+}
+
+.search::placeholder {
+  background: url("img/Pesquisa.svg") no-repeat;
+  padding: 0.4em 2em;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.container {
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1em;
+}
+
+.container:hover {
+  background-color: #574ae844;
+  cursor: pointer;
+}
+
+.news_date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 14px;
+  color: var(--date-grey);
+}
+
+.news_title {
+  font-size: 18px;
+  color: var(--black-title);
+  margin: 1em 0;
+}
+
+.news_text {
+  font-size: 14px;
+  color: var(--date-grey);
+}
+
+@media screen and (min-width: 1728px) {
+  .container_header {
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  }
+
+  .container {
+  max-width: 980px;
+  width: 100%;
+  margin: 2em auto;
+  padding: 1rem;
+  }
+}
