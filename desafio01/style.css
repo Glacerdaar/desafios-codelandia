@@ -43,12 +43,11 @@ body {
   padding: 10px;
   width: 100%;
   margin: 3em 0;
-
 }
 
 .search::placeholder {
   background: url("img/Pesquisa.svg") no-repeat;
-  padding: 0.4em 2em;
+  padding: 0 2em;
   color: var(--white);
   opacity: 0.5;
 }
@@ -92,13 +91,45 @@ body {
   max-width: 980px;
   width: 100%;
   margin: auto;
-  padding: 1rem;
+  padding: rem;
+  }
+
+  .header_title {
+    margin-bottom: 3em;
+  }
+
+  main {
+    margin-top: 7em;
   }
 
   .container {
   max-width: 980px;
   width: 100%;
-  margin: 2em auto;
-  padding: 1rem;
+  margin: 3em auto;
+  padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .search::placeholder {
+    font-size: 18px;
+  }
+
+  .search{
+    padding: 18px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+
+  .news_title {
+    font-size: 26px;
+  }
+
+  .news_text {
+    font-size: 18px;
   }
 }
